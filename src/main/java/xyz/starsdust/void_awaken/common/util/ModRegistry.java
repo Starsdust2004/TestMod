@@ -9,7 +9,7 @@ import xyz.starsdust.void_awaken.common.item.ModItems;
 
 public class ModRegistry {
     @SubscribeEvent
-    public static void registryItem(RegistryEvent.Register<Item> register) {
+    public static void onRegistryItem(RegistryEvent.Register<Item> register) {
         final IForgeRegistry<Item> r = register.getRegistry();
         for (Item item : ModItems.ALL_ITEM) {
             r.register(item);

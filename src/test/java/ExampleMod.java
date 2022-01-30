@@ -30,7 +30,7 @@ public class ExampleMod
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         // 注册用于modloading的processIMC方法
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        // 注册 doClientStuff 方法以进行 modloading
+        // 注册 doClientStuff 方法以进行模组加载
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         // 注册我们自己感兴趣的服务器和其他游戏活动
