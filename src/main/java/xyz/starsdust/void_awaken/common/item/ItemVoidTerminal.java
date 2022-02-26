@@ -27,6 +27,6 @@ public class ItemVoidTerminal extends Item {
             Minecraft.getInstance().setScreen(ScreenTerminal.getScreenTerminal());
         }
         player.awardStat(Stats.ITEM_USED.get(this));
-        return ActionResult.sidedSuccess(itemstack, world.isClientSide());
+        return ActionResult.pass(itemstack);
     }
 }
